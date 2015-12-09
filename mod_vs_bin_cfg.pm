@@ -21,7 +21,7 @@
 # Roma's experiment #1
 # Roma's experiment #2
 	
-#our %modh = ();	
+#our %modh = ();
 
 $modh{bin_add}{device} = "bin_add";
 $modh{bin_add}{prompt} = "Binary Adder";
