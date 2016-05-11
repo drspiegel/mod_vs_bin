@@ -15,6 +15,8 @@
 # Modulo 2^n-1 Multiplier
 # Modulo 2^n+1 Multiplier
 # Forward Converter Universal
+# Forward Converter Universal New
+# Forward Converter Pyramid
 # Reverse Converter Universal
 # Forward Converter Special
 # Reverse Converter Special
