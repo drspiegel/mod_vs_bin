@@ -252,8 +252,37 @@ $modh{fwd_conv_uni}{fpga}{headers} = ["Name", "# of mod", "Path", "LE"];
 $modh{fwd_conv_uni}{url} = "http://vscripts.ru/2013/forward-converter-universal.php";
 $modh{fwd_conv_uni}{url_patt} = "http://vscripts.ru/2013/forward-converter-universal.php?bit=4&modules=7+5+3&type=0";
 $modh{fwd_conv_uni}{'Axis-X'} = "Axis-X is # of modulo";
-$modh{idx_mod_mult}{top} = "forward_conv";
-$modh{idx_mod_mult}{testbench} = "atest_bench";
+$modh{fwd_conv_uni}{top} = "forward_conv";
+$modh{fwd_conv_uni}{testbench} = "atest_bench";
+#module forward_conv (out0, out1, out2, in);
+#module atest_bench();
+#	forward_conv forv1 (out0, out1, out2, in);
+#endmodule
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# bit=64, 128, 256, 512
+# modules=43, 2999
+# bit_block=[1; 8]
+# reduction_stage=1, 2
+$modh{fwd_conv_uni_new}{device} = "fwd_conv_uni_new";
+$modh{fwd_conv_uni_new}{prompt} = "Forward Converter Universal";
+$modh{fwd_conv_uni_new}{vlsi}{process} = ["compile", "compile_ultra"];
+$modh{fwd_conv_uni_new}{url} = "http://icdm.ippm.ru/2015/forward-converter-universal.php";
+$modh{fwd_conv_uni_new}{url_patt} = "http://icdm.ippm.ru/2015/forward-converter-universal.php?bit=8&modules=7+5+3&bit_block=0&reduction_stage=1&type=0&use_table=on";
+$modh{fwd_conv_uni_new}{top} = "forward_conv";
+$modh{fwd_conv_uni_new}{testbench} = "atest_bench";
+#module forward_conv (out0, out1, out2, in);
+#module atest_bench();
+#	forward_conv forv1 (out0, out1, out2, in);
+#endmodule
+
+$modh{fwd_conv_pyr}{device} = "fwd_conv_pyr";
+$modh{fwd_conv_pyr}{prompt} = "Forward Converter Pyramid";
+$modh{fwd_conv_pyr}{vlsi}{process} = ["compile", "compile_ultra"];
+$modh{fwd_conv_pyr}{url} = "http://icdm.ippm.ru/2015/forward-converter-pyramid.php";
+$modh{fwd_conv_pyr}{url_patt} = "http://icdm.ippm.ru/2015/forward-converter-pyramid.php?bit=16&modules=7+5+3";
+$modh{fwd_conv_pyr}{top} = "forward_conv";
+$modh{fwd_conv_pyr}{testbench} = "atest_bench";
 #module forward_conv (out0, out1, out2, in);
 #module atest_bench();
 #	forward_conv forv1 (out0, out1, out2, in);
